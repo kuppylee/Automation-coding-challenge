@@ -13,7 +13,7 @@ public class TelevisionPage {
 
     public SamsungPage clickSamsungBrand(){
         driver.findElement(samsungBrand).click();
-        return SamsungPage;
+        return new SamsungPage(driver);
 
     }
 
