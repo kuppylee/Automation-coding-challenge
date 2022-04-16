@@ -12,9 +12,10 @@ import java.util.Set;
 public class ItemDetails {
 
     private final WebDriver driver;
-    private By aboutItem = By.cssSelector("h1[class='a-size-base-plus a-text-bold']");
-    private By aboutItemDetailedText = By.xpath("/html[1]/body[1]/div[2]/div[2]/div[5]/div[4]/div[4]/div[44]/div[1]/ul[1]/li");
-    private List <String> detailedTexts = new ArrayList<>();
+    private final By aboutItem = By.cssSelector("h1[class='a-size-base-plus a-text-bold']");
+    private final By aboutItemDetailedText = By.xpath("/html[1]/body[1]/div[2]/div[2]/div[5]/div[4]/div[4]/div[44]/div[1]/ul[1]/li");
+    private final List <String> detailedTexts = new ArrayList<>();
+
 
 
     ItemDetails(WebDriver driver){

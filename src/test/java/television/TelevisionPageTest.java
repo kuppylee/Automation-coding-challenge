@@ -1,17 +1,21 @@
 package television;
 
 import base.BaseTests;
+import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pages.HomePage;
 import pages.ItemDetails;
 import pages.SamsungPage;
 import pages.TelevisionPage;
 
+import java.net.MalformedURLException;
 import java.util.List;
 import java.util.Set;
 
 public class TelevisionPageTest extends BaseTests{
+
 
     @Test
     public void testTelevision() throws InterruptedException {

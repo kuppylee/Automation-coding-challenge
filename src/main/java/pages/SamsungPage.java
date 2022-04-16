@@ -45,6 +45,4 @@ public class SamsungPage {
         return new ItemDetails(driver);
     }
 
-
-
 }

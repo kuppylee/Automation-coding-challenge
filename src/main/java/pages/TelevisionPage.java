@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 
 public class TelevisionPage {
     protected WebDriver driver;
-    private By samsungBrand = By.xpath("//div[17]//ul[1]//li[4]//span[1]//a[1]//div[1]//label[1]//i[1]");
+    private By samsungBrand = By.xpath("//span[@class='a-size-base a-color-base'][normalize-space()='Samsung']");
 
     public TelevisionPage(WebDriver driver){
         this.driver = driver;

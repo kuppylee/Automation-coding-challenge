@@ -13,6 +13,8 @@ public class HomePage {
         this.driver = driver;
     }
 
+
+
     public void clickHamburgerMenu(){
         driver.findElement(hamburgerMenu).click();
     }
