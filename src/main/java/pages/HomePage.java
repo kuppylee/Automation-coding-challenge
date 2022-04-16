@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class HomePage {
-    private final WebDriver driver;
+    protected final WebDriver driver;
     private final By hamburgerMenu = By.id("nav-hamburger-menu");
     private final By tvAppliancesElectronics = By.xpath("//body/div[@id='hmenu-container']/div[@id='hmenu-canvas']/div[@id='hmenu-content']/ul[1]/li[16]/a[1]");
     private final By television = By.xpath("//a[contains(text(),'Televisions')]");
@@ -21,7 +21,7 @@ public class HomePage {
         driver.findElement(tvAppliancesElectronics).click();
     }
 
-    public TelevisionPage clickByTelevisionBrand(){
+    public TelevisionPage clickTelevision(){
         driver.findElement(television).click();
         return new TelevisionPage(driver);
     }
