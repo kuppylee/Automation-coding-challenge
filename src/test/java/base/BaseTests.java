@@ -5,7 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class BaseTests {
 
-    private WebDriver driver;
+    protected WebDriver driver;
 
     public void setUp(){
         System.setProperty("webdriver.chrome.driver", "resources/chromedriver 3");

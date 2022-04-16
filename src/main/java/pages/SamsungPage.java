@@ -36,17 +36,8 @@ public class SamsungPage {
         return new ItemDetails(driver);
     }
 
-    }
-
-
-
-
-
-
-
-
-
 }
+
 //    WebElement staticDropdown = driver.findElement(By.id("ctl00_mainContent_DropDownListCurrency"));
 //    Select dropdown = new Select(staticDropdown);
 //        dropdown.selectByIndex(3);

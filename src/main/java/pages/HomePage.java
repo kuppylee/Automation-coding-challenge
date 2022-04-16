@@ -4,10 +4,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class HomePage {
-    private WebDriver driver;
-    private By hamburgerMenu = By.id("nav-hamburger-menu");
-    private By tvAppliancesElectronics = By.xpath("//body/div[@id='hmenu-container']/div[@id='hmenu-canvas']/div[@id='hmenu-content']/ul[1]/li[16]/a[1]");
-    private By television = By.xpath("//a[contains(text(),'Televisions')]");
+    private final WebDriver driver;
+    private final By hamburgerMenu = By.id("nav-hamburger-menu");
+    private final By tvAppliancesElectronics = By.xpath("//body/div[@id='hmenu-container']/div[@id='hmenu-canvas']/div[@id='hmenu-content']/ul[1]/li[16]/a[1]");
+    private final By television = By.xpath("//a[contains(text(),'Televisions')]");
 
     public  HomePage(WebDriver driver){
         this.driver = driver;
@@ -21,7 +21,7 @@ public class HomePage {
         driver.findElement(tvAppliancesElectronics).click();
     }
 
-    public TelevisionPage clickTelevision(){
+    public TelevisionPage clickByTelevisionBrand(){
         driver.findElement(television).click();
         return new TelevisionPage(driver);
     }
