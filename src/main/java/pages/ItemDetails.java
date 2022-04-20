@@ -13,7 +13,7 @@ public class ItemDetails {
 
     private final WebDriver driver;
     private final By aboutItem = By.cssSelector("h1[class='a-size-base-plus a-text-bold']");
-    private final By aboutItemDetailedText = By.xpath("/html[1]/body[1]/div[2]/div[2]/div[5]/div[4]/div[4]/div[44]/div[1]/ul[1]/li");
+    private final By aboutItemDetailedText = By.xpath("//ul[@class='a-unordered-list a-vertical a-spacing-mini']");
     private final List <String> detailedTexts = new ArrayList<>();
 
 

@@ -2,6 +2,7 @@ package base;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterClass;
@@ -40,6 +41,9 @@ public class BaseTests {
     public void setUp() throws MalformedURLException {
         System.setProperty("webdriver.chrome.driver", "resources/chromedriver 3");
         driver = new ChromeDriver();
+//        DesiredCapabilities dc = new DesiredCapabilities();
+//        dc.setCapability(CapabilityType.BROWSER_NAME, "chrome");
+//        driver = new RemoteWebDriver(new URL("http://192.168.0.184:4444"),dc );
         homePage = new  HomePage(driver);
         driver.get("https://www.amazon.in/");
         driver.manage().window().maximize();
